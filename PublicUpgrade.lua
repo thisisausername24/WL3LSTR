@@ -450,6 +450,9 @@ local EnabledToggle = Section.NewToggle("Anti AFK",function(bool)
 end)
 local Tab = Window.NewTab("Local OC")
 local Section = Tab.NewSection("Be Creative")
+local Button = Section.NewButton("Full Bark",function()
+	game.Players.LocalPlayer.Character.Jaw.bark:Play()
+end)
 local Button = Section.NewButton("UnGhost",function()
 local A_1 = "HairF"
 local A_2 = "Spiky"
